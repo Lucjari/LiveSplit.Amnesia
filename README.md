@@ -2,6 +2,8 @@
 =================
 
 This is a [LiveSplit] component for Amnesia: The Dark Descent.
+Originally created by [Fatalis](https://github.com/fatalis).
+When Amnesia updated the load remover stopped working, so I changed the memory addresses to make it compatible with the new update.
 
 Features
 --------
@@ -24,8 +26,7 @@ Install
 Contact
 -------
 
-  * [@fatalis_](https://twitter.com/fatalis_)
-  * [fatalis.twitch@gmail.com](mailto:fatalis.twitch@gmail.com)
-  * [twitch.tv/fatalis_](http://www.twitch.tv/fatalis_)
+  * Discord: JDev#1963
+  * [twitch.tv/J4Dev](http://www.twitch.tv/J4Dev)
 
 [LiveSplit]:http://livesplit.org/

@@ -20,7 +20,7 @@ namespace LiveSplit.Amnesia
         }
 
         public string UpdateName => this.ComponentName;
-        public string UpdateURL => "http://fatalis.pw/livesplit/update/";
+        public string UpdateURL => "https://raw.githubusercontent.com/Lucjari/LiveSplit.Amnesia/master/";
         public Version Version => Assembly.GetExecutingAssembly().GetName().Version;
         public string XMLURL => this.UpdateURL + "Components/update.LiveSplit.Amnesia.xml";
     }
