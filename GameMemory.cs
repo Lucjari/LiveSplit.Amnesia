@@ -60,7 +60,7 @@ namespace LiveSplit.Amnesia
             var payload2 = new List<byte>(new byte[] { 0x05 });
             payload2.AddRange(addrBytes);
             payload2.AddRange(new byte[] { 0x00, 0x90, 0x90 });
-            if (!p.WriteBytes(p.MainModuleWow64Safe().BaseAddress + 0xC3C7D, payload2.ToArray()))
+            if (!p.WriteBytes(p.MainModuleWow64Safe().BaseAddress + 0xC3C7E, payload2.ToArray()))
                 return false;
 
             _isLoading = new MemoryWatcher<bool>(p.MainModuleWow64Safe().BaseAddress + UNUSED_BYTE_OFFSET);
