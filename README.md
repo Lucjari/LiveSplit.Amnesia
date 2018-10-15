@@ -3,7 +3,7 @@
 
 This is a [LiveSplit] component for Amnesia: The Dark Descent.
 Originally created by [Fatalis](https://github.com/fatalis).
-When Amnesia updated the load remover stopped working, so I changed the memory addresses to make it compatible with the new update.
+The original load remover was outdated so I made it compatible with the new amnesia update.
 
 Features
 --------
@@ -26,7 +26,7 @@ Install
 Contact
 -------
 
+If you have any questions add me on discord and I'll try to help.
   * Discord: JDev#1963
-  * [twitch.tv/J4Dev](http://www.twitch.tv/J4Dev)
 
 [LiveSplit]:http://livesplit.org/
