@@ -10,7 +10,7 @@ namespace LiveSplit.Amnesia
     {
         public event EventHandler<LoadingChangedEventArgs> OnLoadingChanged;
 
-        private const int UNUSED_BYTE_OFFSET = 0xC3968;
+        private const int UNUSED_BYTE_OFFSET = 0x1236;
 
         private Process _process;
         private MemoryWatcher<bool> _isLoading;
@@ -52,7 +52,7 @@ namespace LiveSplit.Amnesia
             var payload1 = new List<byte>(new byte[] { 0xC6, 0x05 });
             payload1.AddRange(addrBytes);
             payload1.AddRange(new byte[] { 0x01, 0x90, 0xEB });
-            if (!p.WriteBytes(p.MainModuleWow64Safe().BaseAddress + 0xC3A94, payload1.ToArray()))
+            if (!p.WriteBytes(p.MainModuleWow64Safe().BaseAddress + 0xC7144, payload1.ToArray()))
                 return false;
 
             // overwrite useless code and set loading var to 0
@@ -60,7 +60,7 @@ namespace LiveSplit.Amnesia
             var payload2 = new List<byte>(new byte[] { 0x05 });
             payload2.AddRange(addrBytes);
             payload2.AddRange(new byte[] { 0x00, 0x90, 0x90 });
-            if (!p.WriteBytes(p.MainModuleWow64Safe().BaseAddress + 0xC3C7E, payload2.ToArray()))
+            if (!p.WriteBytes(p.MainModuleWow64Safe().BaseAddress + 0xC732E, payload2.ToArray()))
                 return false;
 
             _isLoading = new MemoryWatcher<bool>(p.MainModuleWow64Safe().BaseAddress + UNUSED_BYTE_OFFSET);
