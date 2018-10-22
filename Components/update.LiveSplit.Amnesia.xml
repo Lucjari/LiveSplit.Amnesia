@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <updates>
-  <update version="1.1">
+  <update version="1.2">
     <files>
       <file path="Components/LiveSplit.Amnesia.dll" status="changed" />
     </files>
     <changelog>
-      <change>Now compatible with the hardmode update</change>
+      <change>Made compatible with the new update</change>
     </changelog>
   </update>
 </updates>
