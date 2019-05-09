@@ -57,6 +57,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Components\update.LiveSplit.Amnesia.xml" />
+    <Content Include="LiveSplit.Core.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
